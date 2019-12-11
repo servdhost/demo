@@ -1,0 +1,17 @@
+.button{
+    @apply inline-block py-3 px-6 bg-mint rounded-full text-blue-dark font-semibold leading-tight cursor-pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover{
+    @apply no-underline bg-mint-dark;
+
+}
+
+.button-blue{
+    @apply bg-blue-dark text-white;
+}
+
+.button-blue:hover{
+    @apply no-underline bg-blue;
+}

@@ -1,0 +1,8 @@
+.hero{
+    @apply pt-24 bg-blue-dark;
+}
+
+.hero-bluebg{
+    background: url('../images/triangle-pattern.jpg') repeat center;
+    background-size: cover;
+}

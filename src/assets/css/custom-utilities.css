@@ -1,0 +1,15 @@
+.logo-position{
+    left: -5rem;
+    top:0.5rem;
+    z-index: -1;
+}
+
+.off-screen{
+    top:-9999px;
+    left:-9999px;
+}
+
+.hero-bg{
+    background: url('../images/headerbg.jpg') no-repeat center;
+    background-size: cover;
+}

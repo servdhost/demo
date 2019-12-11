@@ -1,0 +1,16 @@
+@import "components/buttons.css";
+@import "components/hero.css";
+@import "components/menu-flyout.css";
+@import "components/docs.css";
+
+.center-content{
+    @apply max-w-7xl mx-auto px-6;
+}
+.center-content-slim{
+    @apply max-w-4xl;
+}
+@screen md {
+    .center-content {
+        @apply px-16;
+    }
+}

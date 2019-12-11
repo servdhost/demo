@@ -1,0 +1,194 @@
+dateModified: 1576062641
+email:
+  fromEmail: saljh47oah4uaq@a0f98ujp3wfep9w8hj.com
+  fromName: Local
+  template: null
+  transportType: craft\mail\transportadapters\Sendmail
+  transportSettings: null
+fieldGroups:
+  11568da3-3e80-4abc-99ab-b71acffddb67:
+    name: Common
+  5da7d5b1-4ad6-403a-aec2-eddb9c3e21b8:
+    name: Home
+  707c9d17-90ee-46af-9873-1bbb1f50842b:
+    name: FAQ
+  884d65c9-1855-49ce-8332-db9ef9cb5b37:
+    name: Open
+  fc1f1e05-e10b-48b8-8207-a7b012ff6251:
+    name: Docs
+imageTransforms:
+  c2e2b4b7-c798-4df9-b2c4-af4f08d85c19:
+    format: jpg
+    handle: resizedImage
+    height: null
+    interlace: none
+    mode: crop
+    name: 'Resized Image'
+    position: center-center
+    quality: 82
+    width: 800
+plugins:
+  list-builder:
+    edition: standard
+    enabled: false
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  servd-asset-storage:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.0'
+sections:
+  5eab7bf9-8dad-4f9d-9ab6-971251d40670:
+    name: Home
+    handle: home
+    type: single
+    enableVersioning: true
+    propagationMethod: all
+    previewTargets: null
+    entryTypes:
+      b9d4613b-3380-49a5-97d5-8cf6ee219534:
+        name: Home
+        handle: home
+        hasTitleField: false
+        titleLabel: ''
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+        fieldLayouts:
+          cc0f6f75-daeb-479f-8ee7-2ec60b2d6920:
+            tabs:
+              -
+                name: Home
+                sortOrder: 1
+    siteSettings:
+      1d9d2d76-70ea-4a6f-b965-cc6a72128282:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: __home__
+        template: singles/home
+siteGroups:
+  f8cfc98a-fd5f-4ae8-b8fb-b062463f3419:
+    name: 'Servd Demo'
+sites:
+  1d9d2d76-70ea-4a6f-b965-cc6a72128282:
+    siteGroup: f8cfc98a-fd5f-4ae8-b8fb-b062463f3419
+    name: 'Servd Demo'
+    handle: default
+    language: en
+    hasUrls: true
+    baseUrl: $BASE_URL
+    sortOrder: 1
+    primary: true
+superTableBlockTypes:
+  0ac1c340-a2d4-4921-a985-537b84136d58:
+    field: 244acb9f-5bbc-4366-b09d-3d1e8eca55fd
+    fieldLayouts:
+      a54b6667-8d7d-49ac-a193-8d3e20226bdd:
+        tabs:
+          -
+            name: Content
+            sortOrder: '1'
+            fields:
+              8a32c92e-279a-4575-abb1-18420713498b:
+                required: '1'
+                sortOrder: '1'
+    fields:
+      8a32c92e-279a-4575-abb1-18420713498b:
+        name: 'List Content'
+        handle: listContent
+        instructions: ''
+        searchable: '0'
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\redactor\Field
+        settings:
+          redactorConfig: Standard.json
+          purifierConfig: ''
+          cleanupHtml: true
+          removeInlineStyles: '1'
+          removeEmptyTags: '1'
+          removeNbsp: '1'
+          purifyHtml: '1'
+          columnType: text
+          availableVolumes: '*'
+          availableTransforms: '*'
+        fieldGroup: null
+        contentColumnType: text
+  a282eefc-3e69-4f80-9964-6504eea56d1a:
+    field: 443928d9-474a-4606-b300-c6af04a38e02
+    fieldLayouts:
+      eee80320-57a1-46c3-9d0d-795c2fef944a:
+        tabs:
+          -
+            name: Content
+            sortOrder: '1'
+            fields:
+              ddcf9b54-f1c2-49ff-bfba-88071c5ccd14:
+                required: '1'
+                sortOrder: '1'
+              f2cb5896-aca9-4a3d-8175-748aa637cd26:
+                required: '1'
+                sortOrder: '2'
+    fields:
+      ddcf9b54-f1c2-49ff-bfba-88071c5ccd14:
+        name: Label
+        handle: label
+        instructions: ''
+        searchable: '0'
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
+        settings:
+          placeholder: ''
+          code: ''
+          multiline: ''
+          initialRows: '4'
+          charLimit: ''
+          columnType: text
+        fieldGroup: null
+        contentColumnType: text
+      f2cb5896-aca9-4a3d-8175-748aa637cd26:
+        name: 'Row Value'
+        handle: rowValue
+        instructions: ''
+        searchable: '0'
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\Number
+        settings:
+          defaultValue: '0'
+          min: null
+          max: null
+          decimals: 0
+          size: null
+          prefix: ''
+          suffix: ''
+        fieldGroup: null
+        contentColumnType: integer(10)
+system:
+  edition: solo
+  name: 'Servd Demo'
+  live: true
+  schemaVersion: 3.3.3
+  timeZone: UTC
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
+volumes:
+  72fbfd38-8a85-41f3-9c06-5a02208ad6aa:
+    name: 'Servd Assets'
+    handle: servdAssets
+    type: servd\AssetStorage\Volume
+    hasUrls: true
+    url: 'https://cdn.assets-servd.host'
+    settings:
+      subfolder: ''
+      projectSlug: ''
+      securityKey: ''
+      makeUploadsPublic: '1'
+    sortOrder: 1

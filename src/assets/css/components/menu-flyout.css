@@ -1,0 +1,35 @@
+.menu-flyout{
+    @apply absolute 
+            bg-white rounded-lg  
+            text-black px-4 py-3;
+    top:110%;
+    right:1.2rem;
+    box-shadow: 0px 12px 15px 2px rgba(0,0,0,0.55);
+    @nest &:before {
+        content:"";
+        width: 0; 
+        height: 0; 
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        position:absolute;
+        top: -14px;
+        right:5px;
+        border-bottom: 15px solid white;
+    }
+}
+
+@screen md {
+    .menu-flyout{
+        @apply static bg-transparent text-white leading-loose shadow-none px-0 py-0;
+        @nest &:before {
+            display:none;
+        }
+        @nest & li {
+            display:inline;
+        }
+    }
+}
+
+body.menu-open .menu-flyout{
+    @apply block
+}

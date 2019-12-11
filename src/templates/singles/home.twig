@@ -1,0 +1,92 @@
+{% extends '_layout' %}
+
+{% block content %}
+    
+    <div class="hero hero-bluebg pt-32 md:pt-40 pb-32 md:pb-48">
+        <div class="center-content">
+            <div class="max-w-xl m-auto text-white text-center px-4">
+                <h2 class="text-4xl sm:text-5xl md:text-5xl leading-tight mb-6 md:mb-10 font-heading">Servd Demo</h2>
+                <p class="text-lg md:text-2xl mb-8 md:mb-12 font-light leading-tight">Absolutely Fantastic!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="-mt-12 md:-mt-24 pb-12 md:pb-24">
+        <div class="center-content">
+            
+        </div>
+    </div>
+
+    <div class="bg-blue-light py-12 md:py-16 text-blue-dark">
+        <div class="center-content center-content-slim">
+            <h3 class="text-3xl sm:text-4xl text-center sm:text-left font-heading mb-8">
+                Optimised Images
+            </h3>
+            <p class="mb-4">
+                When you use Servd's helper plugin and asset platform for storing your images, they'll
+                automatically be transformed and optimised off-server, and distributed to end users via a global 
+                CDN.
+            </p>
+            
+        </div>
+    </div>
+
+    <div class="py-12 text-blue-dark">
+        <div class="center-content center-content-slim">
+            <h3 class="text-3xl sm:text-4xl text-center sm:text-left font-heading mb-8">
+                Static Caching
+            </h3>
+            <p class="mb-4">
+                Activate static caching and snapshots of your project's responses will be stored
+                and delivered to end users. You can even add simple path prefixes for content which 
+                should never be cached.
+            </p>
+            <p class="mb-4">
+                Users logged into the Craft Control Panel will always skip the cache. So you don't have 
+                to worry about admin-only content getting added to the cache.
+            </p>
+            <p class="mb-4">
+                The Servd Helper plugin will automatically clear the cache whenever changes are made in 
+                Craft Control Panel. You can also force clear the cache at any time.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="bg-blue-light py-12 md:py-16 text-blue-dark">
+        <div class="center-content center-content-slim">
+            <h3 class="text-3xl sm:text-4xl text-center sm:text-left font-heading mb-8">
+                Backup &amp; Restore
+            </h3>
+            <p class="mb-4">
+                Servd will take regular backups of your project. These backups include:
+            </p>
+            <ul class="mb-4 pl-4">
+                <li>- The database</li>
+                <li>- Assets stored on the Servd Asset Platform</li>
+                <li>- The currently deployed commit</li>
+                <li>- The current PHP version</li>
+                <li>- Your project's settings in the Servd Dashboard</li>
+            </ul>
+            <p class="mb-4">
+                You can restore a backup with a single click. It usually takes less between 30 seconds and 2 minutes to complete the entire restore process!
+            </p>
+            
+        </div>
+    </div>
+
+    <div class="py-12 md:py-16 text-blue-dark">
+        <div class="center-content center-content-slim">
+            <h3 class="text-3xl sm:text-4xl text-center sm:text-left font-heading mb-8">
+                Staging Environment
+            </h3>
+            <p class="mb-4">
+                Every project has a Staging environment which you can use to test updates and migrations.
+            </p>
+            <p class="mb-4">
+                Cloning data and assets between your environments is just a single click process in the Servd Dashboard and only takes seconds.
+            </p>
+        </div>
+    </div>
+
+{% endblock %}
