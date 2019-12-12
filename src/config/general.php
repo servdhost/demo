@@ -28,7 +28,7 @@ return [
         'useProjectConfigFile' => true,
         'aliases' => [
         ],
-        'allowAdminChanges' => 'true' === getenv('ALLOW_ADMIN_CHANGES', 'true'),
+        'allowAdminChanges' => 'true' === getenv('ALLOW_ADMIN_CHANGES'),
         'errorTemplatePrefix' => 'errors/',
     ],
 
