@@ -32,7 +32,7 @@ services:
       DB_PASSWORD: ${DB_PASSWORD}
       DB_DATABASE: ${DB_DATABASE}
       DB_SCHEMA: public
-      DB_TABLE_PREFIX: craft_
+      DB_TABLE_PREFIX:
       SECURITY_KEY: ${CRAFT_SECURITY_KEY}
       ALLOW_ADMIN_CHANGES: 'true'
 

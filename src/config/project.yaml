@@ -1,86 +1,60 @@
-dateModified: 1576163105
+dateModified: 1576168476
 email:
-  fromEmail: saljh47oah4uaq@a0f98ujp3wfep9w8hj.com
-  fromName: Local
-  template: null
+  fromEmail: fake@fake-email-address.com
+  fromName: 'Servd Demo'
   transportType: craft\mail\transportadapters\Sendmail
-  transportSettings: null
 fieldGroups:
-  11568da3-3e80-4abc-99ab-b71acffddb67:
+  41f0085a-91c4-4de0-8a54-a5d6419bb7a8:
     name: Common
-  5da7d5b1-4ad6-403a-aec2-eddb9c3e21b8:
-    name: Home
-  707c9d17-90ee-46af-9873-1bbb1f50842b:
-    name: FAQ
-  884d65c9-1855-49ce-8332-db9ef9cb5b37:
-    name: Open
-  fc1f1e05-e10b-48b8-8207-a7b012ff6251:
-    name: Docs
-imageTransforms:
-  c2e2b4b7-c798-4df9-b2c4-af4f08d85c19:
-    name: 'Resized Image'
-    handle: resizedImage
-    mode: crop
-    position: center-center
-    width: 800
-    height: null
-    format: jpg
-    quality: 82
-    interlace: none
 plugins:
-  list-builder:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
   servd-asset-storage:
     edition: standard
     enabled: true
     schemaVersion: '1.0'
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 sections:
-  5eab7bf9-8dad-4f9d-9ab6-971251d40670:
+  7b9fa0a4-623a-43e2-83a8-3d013cc6902e:
     name: Home
     handle: home
     type: single
-    enableVersioning: true
+    enableVersioning: false
     propagationMethod: all
-    previewTargets: null
-    entryTypes:
-      b9d4613b-3380-49a5-97d5-8cf6ee219534:
-        name: Home
-        handle: home
-        hasTitleField: false
-        titleLabel: ''
-        titleFormat: '{section.name|raw}'
-        sortOrder: 1
     siteSettings:
-      1d9d2d76-70ea-4a6f-b965-cc6a72128282:
+      4a08a421-ed5e-4eb5-8dbc-018aed34c7d3:
         enabledByDefault: true
         hasUrls: true
         uriFormat: __home__
         template: singles/home
+    entryTypes:
+      eff33001-900c-4d66-8603-109687a40252:
+        name: Home
+        handle: home
+        hasTitleField: false
+        titleLabel: null
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
 siteGroups:
-  f8cfc98a-fd5f-4ae8-b8fb-b062463f3419:
+  30f1acc4-b407-4444-8edc-278ba32bf7c9:
     name: 'Servd Demo'
 sites:
-  1d9d2d76-70ea-4a6f-b965-cc6a72128282:
-    siteGroup: f8cfc98a-fd5f-4ae8-b8fb-b062463f3419
-    name: 'Servd Demo'
+  4a08a421-ed5e-4eb5-8dbc-018aed34c7d3:
+    baseUrl: 'http://localhost'
     handle: default
-    language: en
     hasUrls: true
-    baseUrl: '@web'
-    sortOrder: 1
+    language: en
+    name: 'Servd Demo'
     primary: true
+    siteGroup: 30f1acc4-b407-4444-8edc-278ba32bf7c9
+    sortOrder: 1
 system:
   edition: solo
   name: 'Servd Demo'
   live: true
   schemaVersion: 3.3.3
-  timeZone: UTC
+  timeZone: America/Los_Angeles
 users:
   requireEmailVerification: true
   allowPublicRegistration: false
@@ -88,12 +62,12 @@ users:
   photoVolumeUid: null
   photoSubpath: ''
 volumes:
-  72fbfd38-8a85-41f3-9c06-5a02208ad6aa:
+  2f7839c9-4c87-4bf6-9d3c-2181918ec980:
     name: 'Servd Assets'
     handle: servdAssets
     type: servd\AssetStorage\Volume
     hasUrls: true
-    url: 'https://cdn.assets-servd.host'
+    url: 'https://cdn.assets-servd.host/'
     settings:
       subfolder: ''
       projectSlug: ''
