@@ -1,73 +1,69 @@
 version: '3.5'
 services:
   nginx:
-      build:
-        context: .
-        dockerfile: ./docker-config/nginx/Dockerfile
-      ports:
-          - 80:80
-      volumes:
-          - cpresources:/var/www/html/web/cpresources
-          - ./src/web:/var/www/html/web
+    build:
+      context: .
+      dockerfile: ./docker-config/nginx/Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - cpresources:/var/www/html/web/cpresources
+      - ./src/web:/var/www/html/web
 
   php:
-      build:
-        context: .
-        dockerfile: ./docker-config/php/Dockerfile
-      expose:
-          - 9000
-      volumes:
-          - cpresources:/var/www/html/web/cpresources
-          - ./src/composer.json:/var/www/html/composer.json
-          - ./src/composer.lock:/var/www/html/composer.lock
-          - ./src/config:/var/www/html/config
-          - ./src/modules:/var/www/html/modules
-          - ./src/templates:/var/www/html/templates
-          - ./src/web:/var/www/html/web
-
-      environment:
-        ENVIRONMENT: ${ENVIRONMENT}
-        DB_DRIVER: mysql
-        DB_SERVER: database
-        DB_USER: ${DB_USER}
-        DB_PASSWORD: ${DB_PASSWORD}
-        DB_DATABASE: ${DB_DATABASE}
-        DB_SCHEMA: public
-        DB_TABLE_PREFIX: craft_
-        ROOT_URL: http://localhost
-        ROOT_PATH: /var/www/html
-        SECURITY_KEY: ${CRAFT_SECURITY_KEY}
-        ALLOW_ADMIN_CHANGES: 'true'
-        CDN_URL: ${CDN_URL}
-        BASE_URL: ${BASE_URL}
+    build:
+      context: .
+      dockerfile: ./docker-config/php/Dockerfile
+    expose:
+      - 9000
+    volumes:
+      - cpresources:/var/www/html/web/cpresources
+      - ./src/composer.json:/var/www/html/composer.json
+      - ./src/composer.lock:/var/www/html/composer.lock
+      - ./src/config:/var/www/html/config
+      - ./src/modules:/var/www/html/modules
+      - ./src/templates:/var/www/html/templates
+      - ./src/web:/var/www/html/web
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT}
+      DB_DRIVER: mysql
+      DB_SERVER: database
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_SCHEMA: public
+      DB_TABLE_PREFIX: craft_
+      SECURITY_KEY: ${CRAFT_SECURITY_KEY}
+      ALLOW_ADMIN_CHANGES: 'true'
 
   database:
-      image: mariadb:10.3
-      volumes:
-          - db-data:/var/lib/mysql
-      environment:
-          MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
-          MYSQL_DATABASE: ${DB_DATABASE}
-          MYSQL_USER: ${DB_USER}
-          MYSQL_PASSWORD: ${DB_PASSWORD}
+    image: mariadb:10.3
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+          
   phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        ports:
-            - 8085:80
-        environment:
-            PMA_HOST: database
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8085:80
+    environment:
+      PMA_HOST: database
 
   buildchain:
-      build:
-        context: .
-        dockerfile: ./docker-config/buildchain/Dockerfile
-      volumes:
-          - ./docker-config/buildchain/package.json:/project/package.json
-          - ./src:/project/src
-      ports:
-          - 3000:3000
-          - 3001:3001  
-      command: [./node_modules/.bin/gulp, watch]
+    build:
+      context: .
+      dockerfile: ./docker-config/buildchain/Dockerfile
+    volumes:
+      - ./docker-config/buildchain/package.json:/project/package.json
+      - ./src:/project/src
+    ports:
+      - 3000:3000
+      - 3001:3001  
+    command: [./node_modules/.bin/gulp, watch]
 
 volumes:
   db-data:

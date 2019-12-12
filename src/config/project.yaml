@@ -1,4 +1,4 @@
-dateModified: 1576161377
+dateModified: 1576163105
 email:
   fromEmail: saljh47oah4uaq@a0f98ujp3wfep9w8hj.com
   fromName: Local
@@ -67,14 +67,14 @@ siteGroups:
     name: 'Servd Demo'
 sites:
   1d9d2d76-70ea-4a6f-b965-cc6a72128282:
+    siteGroup: f8cfc98a-fd5f-4ae8-b8fb-b062463f3419
     name: 'Servd Demo'
     handle: default
     language: en
     hasUrls: true
-    baseUrl: $BASE_URL
+    baseUrl: '@web'
     sortOrder: 1
     primary: true
-    siteGroup: f8cfc98a-fd5f-4ae8-b8fb-b062463f3419
 system:
   edition: solo
   name: 'Servd Demo'

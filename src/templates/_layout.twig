@@ -1,4 +1,3 @@
-{% import 'macros/cdn.twig' as cdn %}
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -9,7 +8,7 @@
     {% include('snippets/icons.twig') %}
   
     <link href="https://fonts.googleapis.com/css?family=ABeeZee|Poppins:300,400,600|Inconsolata:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ alias('@cdnUrl/css/app.css') }}">
+    <link rel="stylesheet" href="/assets/css/app.css">
     
 </head>
 <body class="font-body" id="body">
@@ -29,6 +28,6 @@
 
     {% endblock %}
 
-    <script src="{{ alias('@cdnUrl/js/app.js') }}"></script>
+    <script src="/assets/js/app.js"></script>
 </body>
 </html>

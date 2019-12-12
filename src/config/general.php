@@ -27,9 +27,6 @@ return [
         // (see https://docs.craftcms.com/v3/project-config.html)
         'useProjectConfigFile' => true,
         'aliases' => [
-            '@rootUrl' => getenv('ROOT_URL'),
-            '@rootPath' => getenv('ROOT_PATH'),
-            '@cdnUrl' => getenv('CDN_URL'),
         ],
         'allowAdminChanges' => 'true' === getenv('ALLOW_ADMIN_CHANGES', 'true'),
         'errorTemplatePrefix' => 'errors/',
