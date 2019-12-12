@@ -1,4 +1,4 @@
-dateModified: 1576062641
+dateModified: 1576161377
 email:
   fromEmail: saljh47oah4uaq@a0f98ujp3wfep9w8hj.com
   fromName: Local
@@ -18,15 +18,15 @@ fieldGroups:
     name: Docs
 imageTransforms:
   c2e2b4b7-c798-4df9-b2c4-af4f08d85c19:
-    format: jpg
-    handle: resizedImage
-    height: null
-    interlace: none
-    mode: crop
     name: 'Resized Image'
+    handle: resizedImage
+    mode: crop
     position: center-center
-    quality: 82
     width: 800
+    height: null
+    format: jpg
+    quality: 82
+    interlace: none
 plugins:
   list-builder:
     edition: standard
@@ -56,12 +56,6 @@ sections:
         titleLabel: ''
         titleFormat: '{section.name|raw}'
         sortOrder: 1
-        fieldLayouts:
-          cc0f6f75-daeb-479f-8ee7-2ec60b2d6920:
-            tabs:
-              -
-                name: Home
-                sortOrder: 1
     siteSettings:
       1d9d2d76-70ea-4a6f-b965-cc6a72128282:
         enabledByDefault: true
@@ -73,7 +67,6 @@ siteGroups:
     name: 'Servd Demo'
 sites:
   1d9d2d76-70ea-4a6f-b965-cc6a72128282:
-    siteGroup: f8cfc98a-fd5f-4ae8-b8fb-b062463f3419
     name: 'Servd Demo'
     handle: default
     language: en
@@ -81,92 +74,7 @@ sites:
     baseUrl: $BASE_URL
     sortOrder: 1
     primary: true
-superTableBlockTypes:
-  0ac1c340-a2d4-4921-a985-537b84136d58:
-    field: 244acb9f-5bbc-4366-b09d-3d1e8eca55fd
-    fieldLayouts:
-      a54b6667-8d7d-49ac-a193-8d3e20226bdd:
-        tabs:
-          -
-            name: Content
-            sortOrder: '1'
-            fields:
-              8a32c92e-279a-4575-abb1-18420713498b:
-                required: '1'
-                sortOrder: '1'
-    fields:
-      8a32c92e-279a-4575-abb1-18420713498b:
-        name: 'List Content'
-        handle: listContent
-        instructions: ''
-        searchable: '0'
-        translationMethod: none
-        translationKeyFormat: null
-        type: craft\redactor\Field
-        settings:
-          redactorConfig: Standard.json
-          purifierConfig: ''
-          cleanupHtml: true
-          removeInlineStyles: '1'
-          removeEmptyTags: '1'
-          removeNbsp: '1'
-          purifyHtml: '1'
-          columnType: text
-          availableVolumes: '*'
-          availableTransforms: '*'
-        fieldGroup: null
-        contentColumnType: text
-  a282eefc-3e69-4f80-9964-6504eea56d1a:
-    field: 443928d9-474a-4606-b300-c6af04a38e02
-    fieldLayouts:
-      eee80320-57a1-46c3-9d0d-795c2fef944a:
-        tabs:
-          -
-            name: Content
-            sortOrder: '1'
-            fields:
-              ddcf9b54-f1c2-49ff-bfba-88071c5ccd14:
-                required: '1'
-                sortOrder: '1'
-              f2cb5896-aca9-4a3d-8175-748aa637cd26:
-                required: '1'
-                sortOrder: '2'
-    fields:
-      ddcf9b54-f1c2-49ff-bfba-88071c5ccd14:
-        name: Label
-        handle: label
-        instructions: ''
-        searchable: '0'
-        translationMethod: none
-        translationKeyFormat: null
-        type: craft\fields\PlainText
-        settings:
-          placeholder: ''
-          code: ''
-          multiline: ''
-          initialRows: '4'
-          charLimit: ''
-          columnType: text
-        fieldGroup: null
-        contentColumnType: text
-      f2cb5896-aca9-4a3d-8175-748aa637cd26:
-        name: 'Row Value'
-        handle: rowValue
-        instructions: ''
-        searchable: '0'
-        translationMethod: none
-        translationKeyFormat: null
-        type: craft\fields\Number
-        settings:
-          defaultValue: '0'
-          min: null
-          max: null
-          decimals: 0
-          size: null
-          prefix: ''
-          suffix: ''
-        fieldGroup: null
-        contentColumnType: integer(10)
+    siteGroup: f8cfc98a-fd5f-4ae8-b8fb-b062463f3419
 system:
   edition: solo
   name: 'Servd Demo'
