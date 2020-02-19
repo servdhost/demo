@@ -34,5 +34,13 @@ The assets platform is working! Image transforms and optimisations are being per
 so they can't impact your site's visitors or content authors.
 
 
+## Database Dump
 
+This repo contains a database dump called `servd-demo.sql` which you can use to test Servd's database import functionality.
+
+Once imported you can log into the Craft Control Panel by visiting `/admin` and using the following credentials:
+
+Username: `admin`
+
+Password: `password`
 
