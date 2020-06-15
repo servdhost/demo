@@ -11,7 +11,12 @@ It contains:
 
 ## Run Locally
 
-`docker-compose up` then visit http://localhost in your browser
+1. Copy `.env.example` to `.env`
+2. `chmod 777 -R src/config`
+2. `docker-compose up`  
+3. Visit http://localhost in your browser
+
+Optionally import the database dump in the root of this repo.
 
 ## Launch on Servd
 
@@ -25,13 +30,18 @@ It contains:
 ## Set Up Asset Volume
 
 A Servd Asset Volume is defined in the included project config. Once your site is live you can 
-test it out by uploading a jpeg, gif or png via the craft dashboard. If you preview the uploaded and check 
+test it out by uploading a jpeg, gif or png via the craft dashboard. If you preview the uploaded image and check 
 the URL that it was served from you should see that it originated from either:
 
-`https://optimise.assets-servd.host` or `https://cdn.assets-servd.host`
+`https://optimise2.assets-servd.host` or `https://cdn2.assets-servd.host`
 
 The assets platform is working! Image transforms and optimisations are being performed off server
 so they can't impact your site's visitors or content authors.
+
+## Using the assets platform locally
+
+If you want to test this project in a local development environment, please follow the instructions included 
+in the Servd Assets and Helpers Plugin README regarding how to use Servd's assets platform locally.
 
 
 ## Database Dump

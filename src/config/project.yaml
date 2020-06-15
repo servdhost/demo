@@ -1,4 +1,4 @@
-dateModified: 1576168476
+dateModified: 1592214290
 email:
   fromEmail: fake@fake-email-address.com
   fromName: 'Servd Demo'
@@ -67,7 +67,7 @@ volumes:
     handle: servdAssets
     type: servd\AssetStorage\Volume
     hasUrls: true
-    url: 'https://cdn.assets-servd.host/'
+    url: 'https://cdn2.assets-servd.host/'
     settings:
       subfolder: ''
       projectSlug: ''
