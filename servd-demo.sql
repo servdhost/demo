@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.1.41-MariaDB, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.17  Distrib 10.3.22-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: database    Database: project
 -- ------------------------------------------------------
--- Server version	10.3.14-MariaDB-1:10.3.14+maria~bionic
+-- Server version	10.3.22-MariaDB-1:10.3.22+maria~bionic
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -931,7 +931,7 @@ CREATE TABLE `sessions` (
   KEY `sessions_dateUpdated_idx` (`dateUpdated`),
   KEY `sessions_userId_idx` (`userId`),
   CONSTRAINT `sessions_userId_fk` FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1458,12 +1458,12 @@ CREATE TABLE `widgets` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-12 16:34:57
--- MySQL dump 10.16  Distrib 10.1.41-MariaDB, for debian-linux-gnu (x86_64)
+-- Dump completed on 2020-06-15  9:47:23
+-- MySQL dump 10.17  Distrib 10.3.22-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: database    Database: project
 -- ------------------------------------------------------
--- Server version	10.3.14-MariaDB-1:10.3.14+maria~bionic
+-- Server version	10.3.22-MariaDB-1:10.3.22+maria~bionic
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -1719,7 +1719,7 @@ commit;
 LOCK TABLES `info` WRITE;
 /*!40000 ALTER TABLE `info` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `info` VALUES (1,'3.3.18.1','3.3.3',0,'{\"dateModified\":1576168476,\"email\":{\"fromEmail\":\"fake@fake-email-address.com\",\"fromName\":\"Servd Demo\",\"transportType\":\"craft\\\\mail\\\\transportadapters\\\\Sendmail\"},\"fieldGroups\":{\"41f0085a-91c4-4de0-8a54-a5d6419bb7a8\":{\"name\":\"Common\"}},\"plugins\":{\"servd-asset-storage\":{\"edition\":\"standard\",\"enabled\":true,\"schemaVersion\":\"1.0\"},\"redactor\":{\"edition\":\"standard\",\"enabled\":true,\"schemaVersion\":\"2.3.0\"}},\"sections\":{\"7b9fa0a4-623a-43e2-83a8-3d013cc6902e\":{\"name\":\"Home\",\"handle\":\"home\",\"type\":\"single\",\"enableVersioning\":false,\"propagationMethod\":\"all\",\"siteSettings\":{\"4a08a421-ed5e-4eb5-8dbc-018aed34c7d3\":{\"enabledByDefault\":true,\"hasUrls\":true,\"uriFormat\":\"__home__\",\"template\":\"singles/home\"}},\"entryTypes\":{\"eff33001-900c-4d66-8603-109687a40252\":{\"name\":\"Home\",\"handle\":\"home\",\"hasTitleField\":false,\"titleLabel\":null,\"titleFormat\":\"{section.name|raw}\",\"sortOrder\":1}}}},\"siteGroups\":{\"30f1acc4-b407-4444-8edc-278ba32bf7c9\":{\"name\":\"Servd Demo\"}},\"sites\":{\"4a08a421-ed5e-4eb5-8dbc-018aed34c7d3\":{\"baseUrl\":\"http://localhost\",\"handle\":\"default\",\"hasUrls\":true,\"language\":\"en\",\"name\":\"Servd Demo\",\"primary\":true,\"siteGroup\":\"30f1acc4-b407-4444-8edc-278ba32bf7c9\",\"sortOrder\":1}},\"system\":{\"edition\":\"solo\",\"name\":\"Servd Demo\",\"live\":true,\"schemaVersion\":\"3.3.3\",\"timeZone\":\"America/Los_Angeles\"},\"users\":{\"requireEmailVerification\":true,\"allowPublicRegistration\":false,\"defaultGroup\":null,\"photoVolumeUid\":null,\"photoSubpath\":\"\"},\"volumes\":{\"2f7839c9-4c87-4bf6-9d3c-2181918ec980\":{\"name\":\"Servd Assets\",\"handle\":\"servdAssets\",\"type\":\"servd\\\\AssetStorage\\\\Volume\",\"hasUrls\":true,\"url\":\"https://cdn.assets-servd.host/\",\"settings\":{\"subfolder\":\"\",\"projectSlug\":\"\",\"securityKey\":\"\",\"makeUploadsPublic\":\"1\"},\"sortOrder\":1}}}','{\"dateModified\":\"@config/project.yaml\",\"email\":\"@config/project.yaml\",\"fieldGroups\":\"@config/project.yaml\",\"plugins\":\"@config/project.yaml\",\"sections\":\"@config/project.yaml\",\"siteGroups\":\"@config/project.yaml\",\"sites\":\"@config/project.yaml\",\"system\":\"@config/project.yaml\",\"users\":\"@config/project.yaml\",\"volumes\":\"@config/project.yaml\"}','wNTz3Fy4snZ6','2019-12-12 16:33:48','2019-12-12 16:33:48','7b9bad88-4b94-4983-80f2-bbc38517dde4');
+INSERT INTO `info` VALUES (1,'3.3.18.1','3.3.3',0,'{\"dateModified\":1592214290,\"email\":{\"fromEmail\":\"fake@fake-email-address.com\",\"fromName\":\"Servd Demo\",\"transportType\":\"craft\\\\mail\\\\transportadapters\\\\Sendmail\"},\"fieldGroups\":{\"41f0085a-91c4-4de0-8a54-a5d6419bb7a8\":{\"name\":\"Common\"}},\"plugins\":{\"servd-asset-storage\":{\"edition\":\"standard\",\"enabled\":true,\"schemaVersion\":\"1.0\"},\"redactor\":{\"edition\":\"standard\",\"enabled\":true,\"schemaVersion\":\"2.3.0\"}},\"sections\":{\"7b9fa0a4-623a-43e2-83a8-3d013cc6902e\":{\"name\":\"Home\",\"handle\":\"home\",\"type\":\"single\",\"enableVersioning\":false,\"propagationMethod\":\"all\",\"siteSettings\":{\"4a08a421-ed5e-4eb5-8dbc-018aed34c7d3\":{\"enabledByDefault\":true,\"hasUrls\":true,\"uriFormat\":\"__home__\",\"template\":\"singles/home\"}},\"entryTypes\":{\"eff33001-900c-4d66-8603-109687a40252\":{\"name\":\"Home\",\"handle\":\"home\",\"hasTitleField\":false,\"titleLabel\":null,\"titleFormat\":\"{section.name|raw}\",\"sortOrder\":1}}}},\"siteGroups\":{\"30f1acc4-b407-4444-8edc-278ba32bf7c9\":{\"name\":\"Servd Demo\"}},\"sites\":{\"4a08a421-ed5e-4eb5-8dbc-018aed34c7d3\":{\"baseUrl\":\"http://localhost\",\"handle\":\"default\",\"hasUrls\":true,\"language\":\"en\",\"name\":\"Servd Demo\",\"primary\":true,\"siteGroup\":\"30f1acc4-b407-4444-8edc-278ba32bf7c9\",\"sortOrder\":1}},\"system\":{\"edition\":\"solo\",\"name\":\"Servd Demo\",\"live\":true,\"schemaVersion\":\"3.3.3\",\"timeZone\":\"America/Los_Angeles\"},\"users\":{\"requireEmailVerification\":true,\"allowPublicRegistration\":false,\"defaultGroup\":null,\"photoVolumeUid\":null,\"photoSubpath\":\"\"},\"volumes\":{\"2f7839c9-4c87-4bf6-9d3c-2181918ec980\":{\"name\":\"Servd Assets\",\"handle\":\"servdAssets\",\"type\":\"servd\\\\AssetStorage\\\\Volume\",\"hasUrls\":true,\"url\":\"https://cdn2.assets-servd.host/\",\"settings\":{\"subfolder\":\"\",\"projectSlug\":\"\",\"securityKey\":\"\",\"makeUploadsPublic\":\"1\"},\"sortOrder\":1}}}','{\"dateModified\":\"@config/project.yaml\",\"email\":\"@config/project.yaml\",\"fieldGroups\":\"@config/project.yaml\",\"plugins\":\"@config/project.yaml\",\"sections\":\"@config/project.yaml\",\"siteGroups\":\"@config/project.yaml\",\"sites\":\"@config/project.yaml\",\"system\":\"@config/project.yaml\",\"users\":\"@config/project.yaml\",\"volumes\":\"@config/project.yaml\"}','wNTz3Fy4snZ6','2019-12-12 16:33:48','2019-12-12 16:33:48','7b9bad88-4b94-4983-80f2-bbc38517dde4');
 /*!40000 ALTER TABLE `info` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -1765,7 +1765,7 @@ commit;
 LOCK TABLES `plugins` WRITE;
 /*!40000 ALTER TABLE `plugins` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `plugins` VALUES (1,'servd-asset-storage','1.2.7','1.0','unknown',NULL,'2019-12-12 16:33:56','2019-12-12 16:33:56','2019-12-12 16:33:58','62a793c2-8e2a-4f45-a3e9-a3730eacfac6'),(2,'redactor','2.3.3.2','2.3.0','unknown',NULL,'2019-12-12 16:33:57','2019-12-12 16:33:57','2019-12-12 16:33:58','2cff3e0e-583a-4173-8734-69de87b1fa39');
+INSERT INTO `plugins` VALUES (1,'servd-asset-storage','1.2.7','1.0','unknown',NULL,'2019-12-12 16:33:56','2019-12-12 16:33:56','2020-06-15 09:41:49','62a793c2-8e2a-4f45-a3e9-a3730eacfac6'),(2,'redactor','2.3.3.2','2.3.0','unknown',NULL,'2019-12-12 16:33:57','2019-12-12 16:33:57','2020-06-15 09:41:49','2cff3e0e-583a-4173-8734-69de87b1fa39');
 /*!40000 ALTER TABLE `plugins` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -1799,7 +1799,7 @@ commit;
 LOCK TABLES `resourcepaths` WRITE;
 /*!40000 ALTER TABLE `resourcepaths` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `resourcepaths` VALUES ('1dee341a','@lib/fabric'),('1e9c6fdf','@app/web/assets/dashboard/dist'),('21d4e0fc','@app/web/assets/dbbackup/dist'),('2d58d60d','@lib/fileupload'),('3092e1b8','@lib/prismjs'),('3214eb31','@lib/jquery-touch-events'),('35b0d7f3','@lib/picturefill'),('3b15f7a2','@lib/d3'),('3e3aaddf','@app/web/assets/editentry/dist'),('5668e9f4','@app/web/assets/editsection/dist'),('5c5722cc','@app/web/assets/plugins/dist'),('61cefa77','@lib/selectize'),('67e1df3e','@craft/web/assets/cp/dist'),('6ba2befd','@lib/xregexp'),('8a8e024','@lib/garnishjs'),('968a4081','@lib/element-resize-detector'),('a48a6a2d','@app/web/assets/feed/dist'),('a8951c09','@lib/velocity'),('b4b2b3e1','@lib/jquery.payment'),('b91aeb74','@bower/jquery/dist'),('bfea6302','@app/web/assets/utilities/dist'),('c0dc061e','@app/web/assets/recententries/dist'),('c1006490','@lib/vue'),('dd912193','@app/web/assets/cp/dist'),('e63c87ac','@lib/jquery-ui'),('ecebc7e5','@lib/axios'),('f0f4e8b1','@app/web/assets/craftsupport/dist'),('f882361d','@craft/web/assets/plugins/dist'),('fe664470','@app/web/assets/updateswidget/dist');
+INSERT INTO `resourcepaths` VALUES ('1dee341a','@lib/fabric'),('1e9c6fdf','@app/web/assets/dashboard/dist'),('21d4e0fc','@app/web/assets/dbbackup/dist'),('2d58d60d','@lib/fileupload'),('3092e1b8','@lib/prismjs'),('3214eb31','@lib/jquery-touch-events'),('35b0d7f3','@lib/picturefill'),('3b15f7a2','@lib/d3'),('3e3aaddf','@app/web/assets/editentry/dist'),('5668e9f4','@app/web/assets/editsection/dist'),('5c5722cc','@app/web/assets/plugins/dist'),('61cefa77','@lib/selectize'),('67e1df3e','@craft/web/assets/cp/dist'),('6ba2befd','@lib/xregexp'),('786d5d6b','@lib/datepicker-i18n'),('8a8e024','@lib/garnishjs'),('968a4081','@lib/element-resize-detector'),('a48a6a2d','@app/web/assets/feed/dist'),('a8951c09','@lib/velocity'),('b4b2b3e1','@lib/jquery.payment'),('b91aeb74','@bower/jquery/dist'),('bfea6302','@app/web/assets/utilities/dist'),('c0dc061e','@app/web/assets/recententries/dist'),('c1006490','@lib/vue'),('d9af34ed','@app/web/assets/login/dist'),('dd912193','@app/web/assets/cp/dist'),('e63c87ac','@lib/jquery-ui'),('ecebc7e5','@lib/axios'),('f0f4e8b1','@app/web/assets/craftsupport/dist'),('f882361d','@craft/web/assets/plugins/dist'),('fe664470','@app/web/assets/updateswidget/dist');
 /*!40000 ALTER TABLE `resourcepaths` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -2037,7 +2037,7 @@ commit;
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `users` VALUES (1,'admin',NULL,NULL,NULL,'fake@fake-email-address.com','$2y$13$TVJZZylBy3prlrZ/m.wwmO19HLiE31typ6xCOlH.mgB0HKlfetsrq',1,0,0,0,'2019-12-12 16:33:49',NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,0,'2019-12-12 16:33:49','2019-12-12 16:33:49','2019-12-12 16:33:50','07960148-5411-4ebd-a889-fac718c19c61');
+INSERT INTO `users` VALUES (1,'admin',NULL,NULL,NULL,'fake@fake-email-address.com','$2y$13$TVJZZylBy3prlrZ/m.wwmO19HLiE31typ6xCOlH.mgB0HKlfetsrq',1,0,0,0,'2020-06-15 09:41:47',NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,0,'2019-12-12 16:33:49','2019-12-12 16:33:49','2020-06-15 09:41:47','07960148-5411-4ebd-a889-fac718c19c61');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -2049,7 +2049,7 @@ commit;
 LOCK TABLES `volumefolders` WRITE;
 /*!40000 ALTER TABLE `volumefolders` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `volumefolders` VALUES (1,NULL,1,'Servd Assets','','2019-12-12 16:34:36','2019-12-12 16:34:36','e4426612-ef36-4d2d-b06e-1e5f8adf07cf'),(2,NULL,NULL,'Temporary source',NULL,'2019-12-12 16:34:49','2019-12-12 16:34:49','9e3861bb-eacc-4b01-8b22-107521e87d43'),(3,2,NULL,'user_1','user_1/','2019-12-12 16:34:49','2019-12-12 16:34:49','66aeb47c-c1d3-4562-8b0c-762d8f767cac');
+INSERT INTO `volumefolders` VALUES (1,NULL,1,'Servd Assets','','2019-12-12 16:34:36','2020-06-15 09:44:50','e4426612-ef36-4d2d-b06e-1e5f8adf07cf'),(2,NULL,NULL,'Temporary source',NULL,'2019-12-12 16:34:49','2019-12-12 16:34:49','9e3861bb-eacc-4b01-8b22-107521e87d43'),(3,2,NULL,'user_1','user_1/','2019-12-12 16:34:49','2019-12-12 16:34:49','66aeb47c-c1d3-4562-8b0c-762d8f767cac');
 /*!40000 ALTER TABLE `volumefolders` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -2061,7 +2061,7 @@ commit;
 LOCK TABLES `volumes` WRITE;
 /*!40000 ALTER TABLE `volumes` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `volumes` VALUES (1,NULL,'Servd Assets','servdAssets','servd\\AssetStorage\\Volume',1,'https://cdn.assets-servd.host/','{\"subfolder\":\"\",\"projectSlug\":\"\",\"securityKey\":\"\",\"makeUploadsPublic\":\"1\"}',1,'2019-12-12 16:34:36','2019-12-12 16:34:36',NULL,'2f7839c9-4c87-4bf6-9d3c-2181918ec980');
+INSERT INTO `volumes` VALUES (1,NULL,'Servd Assets','servdAssets','servd\\AssetStorage\\Volume',1,'https://cdn2.assets-servd.host/','{\"subfolder\":\"\",\"projectSlug\":\"\",\"securityKey\":\"\",\"makeUploadsPublic\":\"1\"}',1,'2019-12-12 16:34:36','2020-06-15 09:44:50',NULL,'2f7839c9-4c87-4bf6-9d3c-2181918ec980');
 /*!40000 ALTER TABLE `volumes` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -2090,4 +2090,4 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-12 16:34:57
+-- Dump completed on 2020-06-15  9:47:23
