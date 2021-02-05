@@ -23,7 +23,7 @@
         "vlucas/phpdotenv": "^2.4.0",
         "codemix/yii2-streamlog": "^1.2",
         "craftcms/redactor": "2.3.3.2",
-        "servd/craft-asset-storage": "^1.0"
+        "servd/craft-asset-storage": "^2.1"
     },
     "autoload": {
         "psr-4": {

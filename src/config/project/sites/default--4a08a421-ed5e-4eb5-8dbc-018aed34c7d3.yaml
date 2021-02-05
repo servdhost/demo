@@ -1,0 +1,8 @@
+baseUrl: 'http://localhost'
+handle: default
+hasUrls: true
+language: en
+name: 'Servd Demo'
+primary: true
+siteGroup: 30f1acc4-b407-4444-8edc-278ba32bf7c9
+sortOrder: 1
